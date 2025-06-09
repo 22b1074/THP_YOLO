@@ -13,11 +13,13 @@ Specifically, the `osnet_x0_25_market50` Re-ID model is used for faster inferenc
 2. Clone the BoxMot repository into the same directory:  
    ```bash
    git clone https://github.com/mikel-brostrom/boxmot
+3. Change into the BoxMot directory and install dependencies:
+    ```bash
    cd boxmot
    pip install pdm
    pdm install
-3. Activate .venv created
-4. python3 tracking.py
+5. Activate .venv created and return to directory containing `tracking.py`
+6. python3 tracking.py
 
 # Demo Output
 ![Tracking Demo](out.gif)
