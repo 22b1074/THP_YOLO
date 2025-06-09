@@ -20,7 +20,8 @@ Specifically, the `osnet_x0_25_market50` Re-ID model is used for faster inferenc
 4. python3 tracking.py
 
 # Demo Output
-[Download demo video](out.mp4)
+![Tracking Demo](out.gif)
+
 
 
 # YOLOv11 Tweaks
