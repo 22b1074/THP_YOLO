@@ -1,6 +1,26 @@
 # Multiple Object Tracking with Re-ID
 
-This repository contains `tracking.py`, which implements the BoxSort tracker. I chose BoxSort over DeepSort because it includes a Re-ID model that helps maintain consistent IDs for the same object, even if the object is missing or occluded for several frames. Specifically, the osnet_x0_25_market50 Re-ID model is used for faster inference without significant loss in accuracy.
+This repository contains `tracking.py`, which implements the BoxSort tracker for multiple object tracking with Re-Identification (Re-ID).  
+I chose BoxSort over DeepSort because it includes a Re-ID model that helps maintain consistent IDs for the same object, even if the object is missing or occluded for several frames.  
+Specifically, the `osnet_x0_25_market50` Re-ID model is used for faster inference without significant loss in accuracy.
+
+---
+
+## Setup Instructions
+
+1. Clone this repository or place your `tracking.py` in your working directory.
+
+2. Clone the BoxMot repository into the same directory:  
+   ```bash
+   git clone https://github.com/mikel-brostrom/boxmot
+   cd boxmot
+   pip install pdm
+   pdm install
+3. Activate .venv created
+4. python3 tracking.py
+
+# Demo Output
+[Download demo video](out.mp4)
 
 
 # YOLOv11 Tweaks
